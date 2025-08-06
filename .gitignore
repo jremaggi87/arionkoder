@@ -1,0 +1,27 @@
+# Archivos de compilación
+target/
+bin/
+build/
+*.class
+*.jar
+*.war
+*.ear
+
+# Archivos de IDE
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+.vscode/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de reportes
+allure-results/
+screenshots/
+
+# Archivos de configuración local
+*.properties
