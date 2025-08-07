@@ -10,8 +10,8 @@ public class LoginTest extends TestBase {
     private static final String VALID_USER = "jremaggi";
     private static final String VALID_PASSWORD = "asdf";
 
-    @Test(description = "Test de ejemplo para Allure")
-    @Description("Este es un test de ejemplo que debería aparecer en el reporte Allure")
+    @Test(description = "Login test")
+    @Description("Login test")
     public void testSuccessfulLogin() {
         HomePage homePage = new HomePage(driver);
         System.out.println("URL antes de login: " + driver.getCurrentUrl());
