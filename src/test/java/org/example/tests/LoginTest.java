@@ -1,7 +1,7 @@
 package org.example.tests;
 
 import org.example.pages.HomePage;
-import org.example.pages.LoginPage;
+import org.example.pages.LoginPage;import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,7 +10,8 @@ public class LoginTest extends TestBase {
     private static final String VALID_USER = "jremaggi";
     private static final String VALID_PASSWORD = "asdf";
 
-    @Test(priority = 1, description = "Login exitoso con credenciales válidas")
+    @Test(description = "Test de ejemplo para Allure")
+    @Description("Este es un test de ejemplo que debería aparecer en el reporte Allure")
     public void testSuccessfulLogin() {
         HomePage homePage = new HomePage(driver);
         System.out.println("URL antes de login: " + driver.getCurrentUrl());
