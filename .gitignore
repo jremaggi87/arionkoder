@@ -1,4 +1,4 @@
-# Archivos de compilación
+# Build
 target/
 bin/
 build/
@@ -7,7 +7,7 @@ build/
 *.war
 *.ear
 
-# Archivos de IDE
+# IDE
 .idea/
 *.iml
 .settings/
@@ -15,13 +15,19 @@ build/
 .classpath
 .vscode/
 
-# Archivos de sistema
+# System
 .DS_Store
 Thumbs.db
 
-# Archivos de reportes
+# Reports
 allure-results/
 screenshots/
 
-# Archivos de configuración local
-*.properties
+# Configuración local (solo ambientes específicos)
+/config/dev/
+/config/local/
+*.local.properties
+
+# ¡Mantener configuraciones base y templates!
+!application.properties.example
+!config.properties.template
